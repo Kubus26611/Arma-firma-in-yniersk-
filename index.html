@@ -8,56 +8,51 @@
     <link rel="stylesheet" href="main_style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
-
-
 </head>
 <body>
-
     <!-- navigacja -->
-    <nav>
-        <div class="navi">
-            <div class="navi_img">
-                <img src="log.png" class="img-fluid" alt="...">
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="log.png" class="img-fluid" alt="Logo"></a>
         </div>
     </nav>
 
     <!-- sekcja oferta -->
+    <section>
 
-<section>
+        <div class="container py-5">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
 
-  <!-- <div class="ofert"> -->
-  <div class="game-board">
+                <!-- karta 1 -->
 
-    <!-- karta 1 -->
+                <div class="col">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#myModal1">
+                        <img src="/img oferta/1anty_stali.jpg" class="card-img-top" alt="Antykorozja Stali">
+                        <div class="card-body">
+                            <h5 class="card-title">Antykorozja Stali</h5>
+                        </div>
+                    </div>
+                </div>
 
-    <div class="box">
-      <div class="card"  data-target="#myModal1" data-toggle="modal">
-        <img src="/img oferta/1anty_stali.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Antykorozja Stali</h5>
-        </div>
-      </div>
-    </div>
-      <!-- modal 1  -->
+                <!-- modal 1 -->
 
-      <div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title">Modal title 1</h4>
-            </div>
-            <div class="modal-body">
-              <p>Modal body content for card 1</p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-          </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-      </div><!-- /.modal -->
+                <div class="modal fade" id="myModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Modal title 1</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Modal body content for card 1
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
     
               
     <!-- karta 2 -->
@@ -316,64 +311,54 @@
 
     
     <section>
-      <div class="contact">
-        <div class="container_contact">
-
-          <div class="map">
-            <h1 class="map_title">Tutaj nas znajdziesz</h1>
-            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d20483.49410932103!2d19.961793!3d50.078109!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165ae12f3d2e9b%3A0x77cc2077889049cc!2sDukat%C3%B3w%2029%2C%2031-431%20Krak%C3%B3w%2C%20Polska!5e0!3m2!1spl!2sus!4v1716154895574!5m2!1spl!2sus" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <button class="navigate"  id="redirect-button">prowadz</button>
+      <div class="container py-5">
+          <div class="row">
+              <div class="col-lg-6 mb-4">
+                  <h1 class="h4 mb-4">Tutaj nas znajdziesz</h1>
+                  <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d20483.49410932103!2d19.961793!3d50.078109!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165ae12f3d2e9b%3A0x77cc2077889049cc!2sDukat%C3%B3w%2029%2C%2031-431%20Krak%C3%B3w%2C%20Polska!5e0!3m2!1spl!2sus!4v1716154895574!5m2!1spl!2sus" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  <button class="btn btn-secondary w-100 mt-3" id="redirect-button">Prowadź</button>
+              </div>
+              <div class="col-lg-6">
+                  <div class="p-3 bg-light rounded-3">
+                      <p class="mb-2">ARMA Firma Inżynierska sp.j.</p>
+                      <p class="mb-2">31-431 Kraków, ul. Dukatów 29</p>
+                      <p class="mb-2">NIP: 679-20-31-403</p>
+                      <p class="mb-2">Tel/fax: +48 12 417 18 11</p>
+                      <p class="mb-2">+48 12 417 19 25</p>
+                      <p class="mb-2">Email: office@arma-krakow.pl</p>
+                      <div class="d-flex justify-content-center mt-4">
+                          <a href="tel:+48533025761" class="btn btn-primary me-2">Zadzwoń</a>
+                          <a href="mailto:jan.kowalski@firma-kowalski.com" class="btn btn-primary ms-2">Napisz</a>
+                      </div>
+                  </div>
+              </div>
           </div>
-
-          <div class="date">
-            <div class="date_content">
-                <p class="description">ARMA Firma Inżynierska sp.j.</p>
-                <p class="description"> 31-431 Kraków, ul. Dukatów 29</p>
-                <p class="description">NIP:679-20-31-403</p>
-                <p class="description">Tel/fax: +48 12 417 18 11</p>
-                <p class="description">+48124171925</p>
-                <p class="description">Email: office@arma-krakow.pl</p>
-          </div>
-          <div class="buttons">
-<button class="call"><a href="tel:+48533025761">zadzwoń</a></button>
-<button class="write"><a href="mailto:jan.kowalski@firma-kowalski.com">Napisz</a></button>
-
-
-          </div>
-          </div>
-
-        </div>
-
-
       </div>
+  </section>
 
+  <footer class="bg-dark text-white text-center py-4">
+      <p class="mb-0">© 2023 Arma - firma inżynierska. All rights reserved.</p>
+  </footer>
 
-    </section>
-
-    <footer>
-
-      
-    </footer>
-
-    <script>
+  <script>
       // Pobierz wszystkie karty
       var cards = document.querySelectorAll('.card');
-    
+      
       // Iteruj przez każdą kartę
       cards.forEach(function(card) {
-        // Dodaj obsługę zdarzenia kliknięcia
-        card.addEventListener('click', function() {
-          // Pobierz docelowy modal z atrybutu data-target karty
-          var targetModalId = card.getAttribute('data-target');
-          // Wywołaj metodę modal związanej z Bootstrap, aby otworzyć odpowiedni modal
-          $(targetModalId).modal('show');
-        });
+          // Dodaj obsługę zdarzenia kliknięcia
+          card.addEventListener('click', function() {
+              // Pobierz docelowy modal z atrybutu data-target karty
+              var targetModalId = card.getAttribute('data-bs-target');
+              // Wywołaj metodę modal z Bootstrap, aby otworzyć odpowiedni modal
+              var modal = new bootstrap.Modal(document.querySelector(targetModalId));
+              modal.show();
+          });
       });
 
-        document.getElementById("redirect-button").onclick = function() {
-            window.location.href = "https://www.google.com/maps/dir/50.0713443,19.9130224/Dukat%C3%B3w+29,+31-431+Krak%C3%B3w,+Polska/@50.0719075,19.9275024,15z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0x47165ae12f3d2e9b:0x77cc2077889049cc!2m2!1d19.961793!2d50.0781089!3e0?hl=pl&entry=ttu";
-        }
-    </script>
-
+      document.getElementById("redirect-button").onclick = function() {
+          window.location.href = "https://www.google.com/maps/dir/50.0713443,19.9130224/Dukat%C3%B3w+29,+31-431+Krak%C3%B3w,+Polska/@50.0719075,19.9275024,15z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0x47165ae12f3d2e9b:0x77cc2077889049cc!2m2!1d19.961793!2d50.0781089!3e0?hl=pl&entry=ttu";
+      }
+  </script>
 </body>
 </html>
