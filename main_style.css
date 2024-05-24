@@ -255,13 +255,18 @@ footer p {
 }
 
 .slider_for_mobile{
-    min-height: 450px;
+    min-height: 480px;
 }
 
 .carousel{
-    margin: auto;
+    border-radius: 2px;
+    margin-top: 100px;
     padding: 30px;
     position: relative;
+}
+
+.carousel-inner{
+border-radius: 2px;
 }
 
 .carousel-control-next, .carousel-control-prev{
